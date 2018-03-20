@@ -272,7 +272,7 @@
 
 /* move from autoconf.h of kernel src, added by tiger 20091225 */
 /* For GPIO setting
-/*
+ *
  * JumpStart LED
  */
 #define CONFIG_GPIO_JUMPSTART_LED_BIT 0
