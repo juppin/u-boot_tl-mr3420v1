@@ -37,32 +37,32 @@
 
 typedef u32 XIo_Address;
 
-extern inline u8
+static inline u8
 XIo_In8(XIo_Address InAddress)
 {
 	return (u8) in_8((volatile unsigned char *) InAddress);
 }
-extern inline u16
+static inline u16
 XIo_In16(XIo_Address InAddress)
 {
 	return (u16) in_be16((volatile unsigned short *) InAddress);
 }
-extern inline u32
+static inline u32
 XIo_In32(XIo_Address InAddress)
 {
 	return (u32) in_be32((volatile unsigned *) InAddress);
 }
-extern inline void
+static inline void
 XIo_Out8(XIo_Address OutAddress, u8 Value)
 {
 	out_8((volatile unsigned char *) OutAddress, Value);
 }
-extern inline void
+static inline void
 XIo_Out16(XIo_Address OutAddress, u16 Value)
 {
 	out_be16((volatile unsigned short *) OutAddress, Value);
 }
-extern inline void
+static inline void
 XIo_Out32(XIo_Address OutAddress, u32 Value)
 {
 	out_be32((volatile unsigned *) OutAddress, Value);
